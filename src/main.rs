@@ -41,8 +41,7 @@ struct SubmitArgs {
     #[clap(long, env = "KELVIN_API_TOKEN")]
     token: String,
 
-    // #[clap(long, default_value = "https://kelvin.cs.vsb.cz")]
-    #[clap(long, default_value = "http://127.0.0.1:8000")]
+    #[clap(long, default_value = "https://kelvin.cs.vsb.cz")]
     kelvin_url: String,
 
     /// Do not open the browser after uploading the submit.

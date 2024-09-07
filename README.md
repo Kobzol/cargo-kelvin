@@ -29,5 +29,5 @@ $ cargo kelvin submit <assignment-id> [--token <kelvin-api-token>]
 
 Run `cargo kelvin --help` to find out more.
 
-Please do not upload new submits more often than once per minute, prefer running tests locally with `cargo test`. If you
-spam Kelvin too much, we will ban your account.
+❗Please do not upload new submits more often than once per minute, prefer running tests locally with `cargo test`. If you
+spam Kelvin too much, we will ban your account.❗

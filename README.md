@@ -6,7 +6,7 @@ code into Kelvin.
 ## Installation
 
 ```bash
-$ cargo install --force git+https://github.com/kobzol/cargo-kelvin
+$ cargo install --force --git https://github.com/kobzol/cargo-kelvin
 ```
 
 ## Usage

@@ -19,9 +19,8 @@ it in the description of the task, or in the Kelvin URL (`kelvin.cs.vsb.cz/task/
 
 You are supposed to use `cargo kelvin` from within a Cargo project, ideally in the directory where `Cargo.toml` is
 located.
-It will find all local (non-ignored) `.rs`, `.toml`, `.lock`, `.md` and `.txt` files, compress them into a ZIP archive
-and
-upload the archive as a new submit into Kelvin.
+It will find all (non-ignored) `.rs`, `.toml`, `.lock`, `.md` and `.txt` files in the current Cargo workspace, compress them into a ZIP archive
+and upload the archive as a new submit into Kelvin.
 
 ```bash
 $ cargo kelvin submit <assignment-id> [--token <kelvin-api-token>]

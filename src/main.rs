@@ -168,6 +168,9 @@ fn compress_workspace(manifest_path: PathBuf) -> anyhow::Result<Vec<u8>> {
                 let Ok(relative_path) = file.path().strip_prefix(&root_dir) else {
                     continue;
                 };
+                if relative_path.starts_with("target") {
+                    continue;
+                }
                 if let Err(error) = write_file_to_zip(&mut zip, relative_path, file.path()) {
                     log::warn!(
                         "Cannot write file {:?} to ZIP archive: {error:?}",

@@ -15,7 +15,7 @@ ignore = "0.4"
 log = "0.4"
 open = "5.3"
 env_logger = "0.11"
-reqwest = { version = "0.12", features = ["blocking", "json", "multipart"] }
+reqwest = { version = "0.12", features = ["blocking", "json", "multipart", "rustls-tls-webpki-roots"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 zip = { version = "2.2", default-features = false, features = ["deflate"] }

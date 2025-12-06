@@ -17,7 +17,14 @@ You will also need to find out the `assignment ID` of the task that you are subm
 find
 it in the description of the task, or in the Kelvin URL (`kelvin.cs.vsb.cz/task/<assignment-id>/<your-username>/...`).
 
-You are supposed to use `cargo kelvin` from within a Cargo project, ideally in the directory where `Cargo.toml` is
+You can use `cargo kelvin download` to download either homework, exercises or lecture for a given assignment
+
+Example of usage
+``` bash
+$ cargo kelvin download <assignment_id> [-d|--download-type [homework | exercise | lecture]]
+```
+
+You are supposed to use `cargo kelvin submit` from within a Cargo project, ideally in the directory where `Cargo.toml` is
 located.
 It will find all (non-ignored) `.rs`, `.toml`, `.lock`, `.md` and `.txt` files in the current Cargo workspace, compress them into a ZIP archive
 and upload the archive as a new submit into Kelvin.
